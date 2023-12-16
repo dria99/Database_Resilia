@@ -1,11 +1,12 @@
-# trabindividualmod3
+# Database Resilia
+--
 
 Resilia_Indv Database
 
 Este repositório contém o código SQL para criar e popular um banco de dados chamado "Resilia_Indv". O banco de dados é projetado para armazenar informações sobre empresas parceiras, tecnologias, colaboradores e áreas relacionadas. Abaixo estão as principais informações sobre o banco de dados.
 Estrutura do Banco de Dados
 
-O banco de dados consiste em cinco tabelas:
+*O banco de dados consiste em cinco tabelas:*
 
     empresas_parceiras:
         id_empresa (INT, Primary Key)
@@ -35,7 +36,7 @@ O banco de dados consiste em cinco tabelas:
         nome_area (VARCHAR(50))
         id_empresa (INT, Foreign Key referenciando empresas_parceiras)
 
-Relacionamentos
+*Relacionamentos*
 
     A tabela tecnologias_empresas estabelece uma relação muitos para muitos entre as tabelas empresas_parceiras e tecnologias, utilizando chaves estrangeiras.
 
@@ -43,9 +44,11 @@ Relacionamentos
 
     A tabela area também possui uma relação muitos para um com a tabela empresas_parceiras, indicando que uma área está associada a uma empresa.
 
-Exemplo de Registros
+*Exemplo de Registros*
 
-Abaixo estão alguns exemplos de registros inseridos no banco de dados:
+#Abaixo estão alguns exemplos de registros inseridos no banco de dados:
+--
+
 empresas_parceiras
 
     (1, 'Empresa de Tecnologia 1', 'Rua Tô Surtando, 456', 'contato@empresadetecnologia1.com', '(21) 22222-3333')
@@ -71,10 +74,11 @@ area
     (1, 'Desenvolvimento', 1) (Área de Desenvolvimento na Empresa 1)
     (2, 'Análise de Dados', 2) (Área de Análise de Dados na Empresa 2)
 
-Como Utilizar
+##Como Utilizar
+--
 
     Execute o script SQL em um sistema de gerenciamento de banco de dados compatível.
     Os dados de exemplo estão incluídos para ilustrar como inserir registros nas tabelas.
     Adapte conforme necessário para atender aos requisitos específicos do seu projeto.
 
-Sinta-se à vontade para entrar em contato se precisar de mais informações ou assistência.
+***Sinta-se à vontade para entrar em contato se precisar de mais informações ou assistência.***
